@@ -35,20 +35,22 @@ int main()
     std::cout << "El cociente de su division es : " << cociente << std::endl;
 
     //EJERCICIO 2.17
-   //char str1[v];
-   // char str2[w];  
-    //char str3[x];
-    //char str4[y];
-    //char str5[z];
+ 
+    char a[] = "v x y z";
+    char b = 'v';
+    char c = 'x';
+    char d = 'y';
+    char e = 'z';
+    //utilizando una insteruccion con un operador de insercion de flujos 
+    std::cout << a <<std :: endl;
+    //utilizando una insteruccion con cuatro operadores de insercion de flujos 
+    std::cout << b << "\t" << c << "\t" << d << "\t" << e << std::endl;
+    //utilizando cuatro instrucciones
+    std::cout << b<<c<<d<<e << std::endl;
+   
+    
 
-    //char terminos;
-    //terminos = str1 + str2 + str3 + str4 + str5;
-
-    //std::cout << "Terminos: " << terminos << std::endl;
-
-
-
-    //EJERCICIO 2.18
+   //EJERCICIO 2.18
     int r;
     int t;
 
@@ -125,15 +127,43 @@ int main()
         std::cout << k << " es el numero mas pequeño" << std::endl;
     }
 
-    std::cout << "Hello World!\n";
+    
+
+    //EJERCICIO 2.27
+
+    using namespace std;
+
+    char o;
+
+    cout << "Ingrese un caracter: ";
+    cin >> o;
+    cout << "Su caracter en valor entero es: " << static_cast<int>(o)<<endl;
+    
+    //EJERCICIO 2.28
+    int num = 0;
+    int numinv = 0;
+    int rest = 0;
+
+    cout << "ingrese un numero: ";
+    cin >> num;
+
+    while (num > 0) {
+        rest = num % 10;
+        num = num / 10;
+        numinv = numinv * 10 + rest;
+    }
+    cout << "El numero invertido es: " << numinv << endl;
+
+    //EJERCICIO 2.29
+
+    int longi;
+    cout << "Longitud de la cara del cubo:";
+    cin >> longi;
+    cout << "el area del cubo es: " << (longi * longi) * 6 << endl;
+    cout << "el volumen del cubo es: " << (longi * longi * longi);
+
+
+    
+
 }
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
