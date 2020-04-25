@@ -57,12 +57,12 @@ int main()
 
     int semilla1;
     int semilla2;
-   
+   // USE UN LIMITE COMO EL NUMERO 20 
 
-    for (semilla1 = 0; semilla1 <= 15;semilla1++) {
+    for (semilla1 = 0; semilla1 <=20 ;semilla1++) {
         cout << semilla1;
         cout << endl;
-        for (semilla2 = 1;semilla2 <= 15;semilla2++) {
+        for (semilla2 = 1;semilla2 <=20;semilla2++) {
             cout << semilla2;
             cout << endl;
             semilla1 = semilla2 + semilla1;
